@@ -1,0 +1,82 @@
+/* Set the background image */
+body {
+    background-image: url('background.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Keeps the background fixed when scrolling */
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif; /* Default font */
+}
+
+/* Style the navigation bar */
+.navbar {
+    padding: 20px 35px !important;
+}
+
+/* Massarah Logo Styling */
+.navbar-brand {
+    font-size: 40px !important; /* Ensure larger size */
+    font-weight: bold !important;
+    font-family: 'Dancing Script', cursive !important; /* Apply font */
+    color: #37222d !important; /* Pink shade */
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+/* Push navbar items to the right */
+.navbar-nav {
+    margin-left: auto;
+}
+
+/* Make nav links bigger & stylish */
+.navbar-nav .nav-link {
+    font-size: 15px;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: #41393d;
+    transition: color 0.3s ease-in-out;
+    font-family: 'Quicksand', sans-serif; /* Default font */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #D63384; /* Pink hover effect */
+}
+
+/* Responsive Navbar Tweaks */
+@media (max-width: 992px) {
+    .navbar-nav {
+        text-align: center;
+    }
+}
+
+
+h5 {
+    font-family: 'Dancing Script', cursive; /* Cute, fancy font for headings */
+}
+
+/* Style the carousel container */
+#infoCarousel {
+    margin: 50px auto; /* Adjust margin to center it */
+    width: 80%; /* Adjust width */
+    height: 90vh;
+    border: 5px solid rgba(255, 255, 255, 0.5); /* Semi-transparent white border */
+    border-radius: 15px; /* Rounded corners */
+    background: rgba(0, 0, 0, 0.3); /* Slightly transparent background */
+    padding: 20px; /* Space inside the border */
+    align-content: center;
+}
+
+/* Center carousel text */
+.carousel-item {
+    color: white; /* Text color */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Ensure images in the carousel fill the space */
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounded corners */
+}

@@ -194,3 +194,12 @@ button:hover {
 }
 
 /* END OF ABOUT US PAGE*/
+
+/* Our Services Page */
+
+.services{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 130px;
+    margin-bottom: 30px;
+}

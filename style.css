@@ -7,11 +7,20 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Quicksand', sans-serif; /* Default font */
+    padding-top: 40px; /* Pushes everything down */
 }
 
 /* Style the navigation bar */
 .navbar {
     padding: 20px 35px !important;
+    position: fixed; /* Fix it at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it's above everything */
+    background-color: rgba(242, 200, 237, 0.8); /* Keep background semi-transparent */
+    padding: 20px 35px !important;
+    transition: background 0.3s ease-in-out; /* Smooth effect */
 }
 
 /* Massarah Logo Styling */
@@ -27,6 +36,7 @@ body {
 /* Push navbar items to the right */
 .navbar-nav {
     margin-left: auto;
+    padding-right: 90px;
 }
 
 /* Make nav links bigger & stylish */
@@ -40,7 +50,7 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-    color: #D63384; /* Pink hover effect */
+    color: #698d80; /* Pink hover effect */
 }
 
 /* Responsive Navbar Tweaks */
@@ -65,6 +75,7 @@ h5 {
     background: rgba(0, 0, 0, 0.3); /* Slightly transparent background */
     padding: 20px; /* Space inside the border */
     align-content: center;
+    margin-top: 120px; /* Pushes carousel below navbar */
 }
 
 /* Center carousel text */
@@ -72,6 +83,7 @@ h5 {
     color: white; /* Text color */
     padding: 50px 20px;
     text-align: center;
+    font-family: 'Quicksand', sans-serif; /* Default font */
 }
 
 /* Ensure images in the carousel fill the space */

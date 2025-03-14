@@ -1,5 +1,5 @@
 /* Set the background image */
-body {
+body, html {
     background-image: url('background.jpg'); /* Replace with your image */
     background-size: cover;
     background-position: center;
@@ -8,8 +8,10 @@ body {
     padding: 0;
     font-family: 'Quicksand', sans-serif; /* Default font */
     padding-top: 40px; /* Pushes everything down */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    scroll-behavior: smooth; /* Smooth transition between sections */
+    scroll-padding-top: 100px;
 }
-
 
 /* Style the navigation bar */
 .navbar {
@@ -31,9 +33,13 @@ body {
     font-family: 'Dancing Script', cursive !important; /* Apply font */
     color: #37222d !important; /* Pink shade */
     padding-left: 20px;
-    text-decoration: none;
+    transition: 0.3s ease-in-out;
+
 }
 
+.navbar-brand:hover{
+    opacity: 0.7; /* Slight fade effect */
+}
 /* Push navbar items to the right */
 .navbar-nav {
     margin-left: auto;
@@ -62,11 +68,11 @@ body {
 }
 
 
-h5 {
+h5, h1 {
     font-family: 'Dancing Script', cursive; /* Cute, fancy font for headings */
 }
 
-/* Style the carousel container In Home Page */
+/* Carousel In Home Page */
 #infoCarousel {
     margin: 50px auto; /* Adjust margin to center it */
     width: 80%; /* Adjust width */
@@ -99,14 +105,13 @@ h5 {
 .contactHeader{
     margin-top: 130px;
     text-align: center;
-    font-family: 'Dancing Script', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     margin-bottom: 30px;
 }
 
 p{
     font-family: 'Quicksand', sans-serif;
     text-align: center;
-
 }
 
 form {
@@ -205,16 +210,8 @@ button:hover {
     background-attachment: fixed;
 }
 
-
-.services{
-    text-align: center;
-    font-family: 'Quicksand', sans-serif;
-    margin-top: 130px;
-    margin-bottom: 30px;
-}
-
 .hero-section {
-    height: 80vh; /* Adjust height as needed */
+    height: 93vh; /* Adjust height as needed */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -278,6 +275,7 @@ button:hover {
 
 /* Steps Section */
 .steps-section {
+    margin-top: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;

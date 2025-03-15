@@ -51,7 +51,7 @@ body, html {
     font-size: 15px;
     padding: 10px 15px;
     font-weight: bold;
-    color: #41393d;
+    color: #698d80;
     transition: color 0.3s ease-in-out;
     font-family: 'Quicksand', sans-serif; /* Default font */
 }
@@ -101,17 +101,22 @@ h5, h1 {
 }
 
 /* Contact Us Page */
+
 /* Centering the Form */
 .contactHeader{
     margin-top: 130px;
     text-align: center;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 50px;
+    font: bold;
+    color:#698d80;
     margin-bottom: 30px;
 }
 
-p{
+.contact {
     font-family: 'Quicksand', sans-serif;
     text-align: center;
+    color: #b47272;
 }
 
 form {
@@ -176,10 +181,94 @@ button:hover {
 
 .about{
     text-align: center;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 50px;
+    font: bold;
+    color:#698d80;
     margin-top: 40px;
     margin-bottom: 30px;
 }
+
+.Slider{
+    margin-top: 20px; /* Adjust this value as needed */
+    padding-bottom: 80px;
+    padding-top: 15px;
+    height: 30px;
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    color: #b47272;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.Slider div {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    animation: slider 6s linear infinite;
+    opacity: 0;
+}
+
+.Slider div:nth-child(1) {
+    animation-delay: 0s;
+}
+.Slider div:nth-child(2) {
+    animation-delay: 2s;
+}
+.Slider div:nth-child(3) {
+    animation-delay: 4s;
+}
+
+
+@keyframes slider{
+
+    0% { opacity: 0; transform: translateY(10px); }
+    10% { opacity: 1; transform: translateY(0px); }
+    30% { opacity: 1; transform: translateY(0px); }
+    40% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 0; }
+
+
+}
+
+.container p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px; 
+    margin-bottom: 20px; 
+    color: #698d80;
+
+}
+
+.card-title {
+    font-family: 'Dancing Script', cursive; 
+    font-size: 24px; 
+    font-weight: bold; 
+    color: #4a6652; 
+    margin-bottom: 10px; 
+}
+
+
+.card-body{
+
+    background-color:#fffaf0;
+}
+
+.card-text img {
+    width: 250px; 
+    height: 150px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin: 10px auto; 
+    display: block; 
+}
+
+
 
 .about-card-button {
     background-color: #698d80 !important; /* Soft red */

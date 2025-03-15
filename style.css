@@ -51,13 +51,13 @@ body, html {
     font-size: 15px;
     padding: 10px 15px;
     font-weight: bold;
-    color: #3a5148;
+    color: #698d80;
     transition: color 0.3s ease-in-out;
     font-family: 'Quicksand', sans-serif; /* Default font */
 }
 
 .navbar-nav .nav-link:hover {
-    color: #7fa295; /* Pink hover effect */
+    color: #698d80; /* Pink hover effect */
 }
 
 /* Responsive Navbar Tweaks */
@@ -189,6 +189,7 @@ button:hover {
 .footer .row {
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .footer-title {
@@ -267,11 +268,10 @@ button:hover {
 }
 
 .container p{
-    text-align: center;
     font-family: 'Quicksand', sans-serif;
     font-size: 15px; 
     margin-bottom: 20px; 
-    color: #476359;
+    color: #698d80;
 
 }
 

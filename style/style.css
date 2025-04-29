@@ -120,12 +120,11 @@ h5, h1 {
 }
 
 form {
-    margin: 50px auto; /* Adjust margin to center it */
-    width: 80%; /* Adjust width */
-    height: 90vh;
-    border: 5px solid rgba(255, 255, 255, 0.5); /* Semi-transparent white border */
-    border-radius: 15px; /* Rounded corners */
-    background: rgba(0, 0, 0, 0.3); /* Slightly transparent background */
+    margin: 50px auto;
+    width: 80%;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.3);
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 400px;
@@ -158,6 +157,20 @@ input, select, textarea {
 
 .gender-options input {
     margin: 0 5px 0 0; /* Adds spacing between the radio button and label */
+}
+
+.form-errors {
+    color: #d9534f;
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: left;
+    display: none; /* Hidden by default */
+    font-family: 'Quicksand', sans-serif;
 }
 
 /* Button Styling */
@@ -330,6 +343,43 @@ button:hover {
     background-attachment: fixed;
 }
 
+/* City Dropdown Styling */
+.city-label {
+    font-family: 'Dancing Script', cursive;
+    color: #698d80;
+    font-size: 32px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+#city-select {
+    width: 300px;
+    padding: 10px;
+    margin: 0 auto 20px auto; 
+    display: block;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    color: #41393d;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #698d80;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+.no-city-message {
+    color: #b47272;
+    background-color: #fff4f4;
+    border: 1px solid #f3caca;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
 .hero-section {
     height: 93vh; /* Adjust height as needed */
     display: flex;
@@ -389,7 +439,13 @@ button:hover {
     transform: scale(1.05);
 }
 
-
+.warning-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
 
 /* Steps Section Styling */
 

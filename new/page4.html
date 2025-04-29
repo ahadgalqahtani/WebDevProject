@@ -44,15 +44,27 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-<section class="hero-section">
-    <div class="hero-content">
-        <h1> Plan Your Perfect Wedding, Step by Step! </h1>
-        <p>Masarrah simplifies your wedding planning by gathering all the services you need in one place.  
-            Follow these steps to create your dream wedding effortlessly!</p>
-        <a href="#services-list" class="btn btn-primary">Start Planning</a>
-    </div>
-</section>
+    <div class="hero-section">
+        <div class="hero-content">
+          <h1>Plan Your Perfect Wedding, Step by Step!</h1>
+          <p>
+            Masarrah simplifies your wedding planning by gathering all the services you
+            need in one place. Follow these steps to create your dream wedding effortlessly!
+          </p>
+          <button class="btn btn-primary" id="startPlanningBtn">Start Planning</button>
+      
+          <!-- Add your city selector here -->
+          <h2 class="city-label">Select City</h2>
+          <select id="city-select">
+            <option value="">-- Select a city --</option>
+            <option value="Riyadh">Riyadh</option>
+            <option value="Jeddah">Jeddah</option>
+            <option value="Dammam">Dammam</option>
+          </select>
+          <div id="city-warning" class="warning-message"></div>
+        </div>
+      </div>
+      
 
 <!-- Steps Section -->
 <section id="services-list" class="steps-section">
@@ -60,6 +72,7 @@
         <div class="step-content">
             <h3>1. Pick a Venue</h3>
             <p>Choose from the best wedding venues to match your dream setting.</p>
+            <div class="no-city-message">Please select a city to view available services.</div>
         </div>
         <img src="media/venue.jpg" alt="Venue Icon">
     </div>
@@ -68,6 +81,7 @@
         <div class="step-content">
             <h3>2. Catering & Dining</h3>
             <p>Select catering services that will delight your guests.</p>
+            <div class="no-city-message">Please select a city to view available services.</div>
         </div>
         <img src="media/Catering.jpg" alt="Catering Icon">
     </div>
@@ -76,6 +90,7 @@
         <div class="step-content">
             <h3>3. Cake, Deserts and Canapés </h3>
             <p>Find the perfect cake design and flavor for your big day.</p>
+            <div class="no-city-message">Please select a city to view available services.</div>
         </div>
         <img src="media/sweets.jpg" alt="Cake Icon">
     </div>
@@ -84,6 +99,7 @@
         <div class="step-content">
             <h3>4. Decorations & Setup</h3>
             <p>From floral arrangements to lighting, create the perfect ambiance.</p>
+            <div class="no-city-message">Please select a city to view available services.</div>
         </div>
         <img src="media/decoration.jpg" alt="Decoration Icon">
     </div>
@@ -92,11 +108,12 @@
         <div class="step-content">
             <h3>5. Photography & Videography</h3>
             <p>Capture the magical moments with professional photographers.</p>
+            <div class="no-city-message">Please select a city to view available services.</div>
         </div>
         <img src="media/photographer.jpeg" alt="Photography Icon">
     </div>
 
-    <div class="step step-6">
+    <!-- <div class="step step-6">
         <div class="step-content">
             <h3>6. Entertainment & Music</h3>
             <p>Set the mood with live music, DJs, or other entertainment options.</p>
@@ -119,11 +136,10 @@
             <p>Extra Touches to Make Your Special Day Unforgettable</p>
         </div>
         <img src="media/extra.jpeg" alt="EXTRA Icon">
-    </div>
-
+    </div> -->
   
 </section>
-
+<script src="js/page4.js"></script>
 </body>
 
 </html>

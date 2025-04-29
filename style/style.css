@@ -1,6 +1,6 @@
 /* Set the background image */
 body, html {
-    background-image: url('background.jpg'); /* Replace with your image */
+    background-image: url('/media/background.jpg'); /* Replace with your image */
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Keeps the background fixed when scrolling */
@@ -324,7 +324,7 @@ button:hover {
 /* Our Services Page */
 
 .services-page {
-    background-image: url('background2.jpg'); /* Replace with your desired image */
+    background-image: url('/media/background2.jpg'); /* Replace with your desired image */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

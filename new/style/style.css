@@ -1,699 +1,828 @@
 /* Set the background image */
-body, html {
-    background-image: url('../media/background.jpg'); /* Replace with your image */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; /* Keeps the background fixed when scrolling */
-    margin: 0;
-    padding: 0;
-    font-family: 'Quicksand', sans-serif; /* Default font */
-    padding-top: 40px; /* Pushes everything down */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-    scroll-behavior: smooth; /* Smooth transition between sections */
-    scroll-padding-top: 100px;
- }
- 
- 
- /* Style the navigation bar */
- .navbar {
-    padding: 20px 35px !important;
-    position: fixed; /* Fix it at the top */
-    top: 0;
-    left: 0;
-    width: 100%; /* Full width */
-    z-index: 1000; /* Ensure it's above everything */
-    background-color: rgba(242, 200, 237, 0.8); /* Keep background semi-transparent */
-    padding: 20px 35px !important;
-    transition: background 0.3s ease-in-out; /* Smooth effect */
- }
- 
- 
- /* Massarah Logo Styling */
- .navbar-brand {
-    font-size: 40px !important; /* Ensure larger size */
-    font-weight: bold !important;
-    font-family: 'Dancing Script', cursive !important; /* Apply font */
-    color: #37222d !important; /* Pink shade */
-    padding-left: 20px;
-    transition: 0.3s ease-in-out;
- 
- 
- }
- 
- 
- .navbar-brand:hover{
-    opacity: 0.7; /* Slight fade effect */
- }
- /* Push navbar items to the right */
- .navbar-nav {
-    margin-left: auto;
-    padding-right: 90px;
- }
- 
- 
- /* Make nav links bigger & stylish */
- .navbar-nav .nav-link {
-    font-size: 15px;
-    padding: 10px 15px;
-    font-weight: bold;
-    color: #698d80;
-    transition: color 0.3s ease-in-out;
-    font-family: 'Quicksand', sans-serif; /* Default font */
- }
- 
- 
- .navbar-nav .nav-link:hover {
-    color: #698d80; /* Pink hover effect */
- }
- 
- 
- /* Responsive Navbar Tweaks */
- @media (max-width: 992px) {
-    .navbar-nav {
-        text-align: center;
-    }
- }
- 
- 
- 
- 
- h5, h1 {
-    font-family: 'Dancing Script', cursive; /* Cute, fancy font for headings */
- }
- 
- 
- /* Carousel In Home Page */
- #infoCarousel {
-    margin: 50px auto; /* Adjust margin to center it */
-    width: 80%; /* Adjust width */
-    height: 90vh;
-    border: 5px solid rgba(255, 255, 255, 0.5); /* Semi-transparent white border */
-    border-radius: 15px; /* Rounded corners */
-    background: rgba(0, 0, 0, 0.3); /* Slightly transparent background */
-    padding: 20px; /* Space inside the border */
-    align-content: center;
-    margin-top: 120px; /* Pushes carousel below navbar */
- }
- 
- 
- /* Center carousel text */
- .carousel-item {
-    color: white; /* Text color */
-    padding: 50px 20px;
-    text-align: center;
-    font-family: 'Quicksand', sans-serif; /* Default font */
- }
- 
- 
- /* Ensure images in the carousel fill the space */
- .carousel-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px; /* Rounded corners */
- }
- 
- 
- /* Contact Us Page */
- 
- 
- /* Centering the Form */
- .contactHeader{
-    margin-top: 130px;
-    text-align: center;
-    font-family: 'Dancing Script', sans-serif;
-    font-size: 50px;
-    font: bold;
-    color:#698d80;
-    margin-bottom: 30px;
- }
- 
- 
- .contact {
-    font-family: 'Quicksand', sans-serif;
-    text-align: center;
-    color: #b47272;
- }
- 
- 
- form {
-    margin: 50px auto;
-    width: 80%;
-    border: 5px solid rgba(255, 255, 255, 0.5);
-    border-radius: 15px;
-    background: rgba(0, 0, 0, 0.3);
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    text-align: center;
-    font-family: 'Quicksand', sans-serif;
- }
- 
- .form-message {
+body,
+html {
+   background-image: url('../media/background.jpg');
+   /* Replace with your image */
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   /* Keeps the background fixed when scrolling */
+   margin: 0;
+   padding: 0;
+   font-family: 'Quicksand', sans-serif;
+   /* Default font */
+   padding-top: 40px;
+   /* Pushes everything down */
+   overflow-x: hidden;
+   /* Prevent horizontal scrolling */
+   scroll-behavior: smooth;
+   /* Smooth transition between sections */
+   scroll-padding-top: 100px;
+}
+
+
+/* Style the navigation bar */
+.navbar {
+   padding: 20px 35px !important;
+   position: fixed;
+   /* Fix it at the top */
+   top: 0;
+   left: 0;
+   width: 100%;
+   /* Full width */
+   z-index: 1000;
+   /* Ensure it's above everything */
+   background-color: rgba(242, 200, 237, 0.8);
+   /* Keep background semi-transparent */
+   padding: 20px 35px !important;
+   transition: background 0.3s ease-in-out;
+   /* Smooth effect */
+}
+
+
+/* Massarah Logo Styling */
+.navbar-brand {
+   font-size: 40px !important;
+   /* Ensure larger size */
+   font-weight: bold !important;
+   font-family: 'Dancing Script', cursive !important;
+   /* Apply font */
+   color: #37222d !important;
+   /* Pink shade */
+   padding-left: 20px;
+   transition: 0.3s ease-in-out;
+
+
+}
+
+
+.navbar-brand:hover {
+   opacity: 0.7;
+   /* Slight fade effect */
+}
+
+/* Push navbar items to the right */
+.navbar-nav {
+   margin-left: auto;
+   padding-right: 90px;
+}
+
+
+/* Make nav links bigger & stylish */
+.navbar-nav .nav-link {
+   font-size: 15px;
+   padding: 10px 15px;
+   font-weight: bold;
+   color: #698d80;
+   transition: color 0.3s ease-in-out;
+   font-family: 'Quicksand', sans-serif;
+   /* Default font */
+}
+
+
+.navbar-nav .nav-link:hover {
+   color: #698d80;
+   /* Pink hover effect */
+}
+
+
+/* Responsive Navbar Tweaks */
+@media (max-width: 992px) {
+   .navbar-nav {
+      text-align: center;
+   }
+}
+
+
+
+
+h5,
+h1 {
+   font-family: 'Dancing Script', cursive;
+   /* Cute, fancy font for headings */
+}
+
+
+/* Carousel In Home Page */
+#infoCarousel {
+   margin: 50px auto;
+   /* Adjust margin to center it */
+   width: 80%;
+   /* Adjust width */
+   height: 90vh;
+   border: 5px solid rgba(255, 255, 255, 0.5);
+   /* Semi-transparent white border */
+   border-radius: 15px;
+   /* Rounded corners */
+   background: rgba(0, 0, 0, 0.3);
+   /* Slightly transparent background */
+   padding: 20px;
+   /* Space inside the border */
+   align-content: center;
+   margin-top: 120px;
+   /* Pushes carousel below navbar */
+}
+
+
+/* Center carousel text */
+.carousel-item {
+   color: white;
+   /* Text color */
+   padding: 50px 20px;
+   text-align: center;
+   font-family: 'Quicksand', sans-serif;
+   /* Default font */
+}
+
+
+/* Ensure images in the carousel fill the space */
+.carousel-item img {
+   width: 100%;
+   height: auto;
+   border-radius: 10px;
+   /* Rounded corners */
+}
+
+
+/* Contact Us Page */
+
+
+/* Centering the Form */
+.contactHeader {
+   margin-top: 130px;
+   text-align: center;
+   font-family: 'Dancing Script', sans-serif;
+   font-size: 50px;
+   font: bold;
+   color: #698d80;
+   margin-bottom: 30px;
+}
+
+
+.contact {
+   font-family: 'Quicksand', sans-serif;
+   text-align: center;
+   color: #b47272;
+}
+
+
+form {
+   margin: 50px auto;
+   width: 80%;
+   border: 5px solid rgba(255, 255, 255, 0.5);
+   border-radius: 15px;
+   background: rgba(0, 0, 0, 0.3);
+   padding: 20px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   max-width: 400px;
+   text-align: center;
+   font-family: 'Quicksand', sans-serif;
+}
+
+.form-message {
    margin-top: 15px;
    padding: 10px;
    border-radius: 5px;
    font-weight: bold;
    display: none;
- }
- 
- .form-message.success {
+}
+
+.form-message.success {
    background-color: #d4edda;
    color: #155724;
    border: 1px solid #c3e6cb;
- }
- 
- .form-message.error {
+}
+
+.form-message.error {
    background-color: #f8d7da;
    color: #721c24;
    border: 1px solid #f5c6cb;
- }
- 
- 
- /* Form Label Styling */
- label {
-    font-weight: bold;
-    display: block;
-    margin-top: 10px;
- }
- 
- 
- /* Input and Select Styling */
- input, select, textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
- }
- 
- 
- /* Radio Buttons Styling */
- .gender-options {
-    display: inline-flex;
-    align-items: center;
-    gap: 15px;
- }
- 
- 
- .gender-options input {
-    margin: 0 5px 0 0; /* Adds spacing between the radio button and label */
- }
- 
- 
- .form-errors {
-    color: #d9534f;
-    background-color: #f2dede;
-    border: 1px solid #ebccd1;
-    padding: 10px;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    font-size: 14px;
-    text-align: left;
-    display: none; /* Hidden by default */
-    font-family: 'Quicksand', sans-serif;
- }
- 
- 
- /* Button Styling */
- button {
-    margin-top: 15px;
-    width: 100%;
-    padding: 10px;
-    background: #698d80;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
- }
- 
- 
- button:hover {
-    background: #698d80;
- }
- 
- .message-card {
+}
+
+
+/* Form Label Styling */
+label {
+   font-weight: bold;
+   display: block;
+   margin-top: 10px;
+}
+
+
+/* Input and Select Styling */
+input,
+select,
+textarea {
+   width: 100%;
+   padding: 8px;
+   margin-top: 5px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+}
+
+
+/* Radio Buttons Styling */
+.gender-options {
+   display: inline-flex;
+   align-items: center;
+   gap: 15px;
+}
+
+
+.gender-options input {
+   margin: 0 5px 0 0;
+   /* Adds spacing between the radio button and label */
+}
+
+
+.form-errors {
+   color: #d9534f;
+   background-color: #f2dede;
+   border: 1px solid #ebccd1;
+   padding: 10px;
+   margin-top: 15px;
+   margin-bottom: 10px;
+   border-radius: 5px;
+   font-size: 14px;
+   text-align: left;
+   display: none;
+   /* Hidden by default */
+   font-family: 'Quicksand', sans-serif;
+}
+
+
+/* Button Styling */
+button {
+   margin-top: 15px;
+   width: 100%;
+   padding: 10px;
+   background: #698d80;
+   color: white;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   font-size: 16px;
+}
+
+
+button:hover {
+   background: #698d80;
+}
+
+.message-card {
    border: 1px solid #ccc;
    padding: 10px;
    margin-bottom: 15px;
    border-radius: 8px;
    background-color: #f9f9f9;
- }
- 
- /*FOOTER IN CONTTACTUS*/
- 
- 
- .footer {
-    background-color: #4a6652;
-    color: #fff;
-    padding: 40px 0;
-    text-align: center;
- }
- 
- 
- .footer .row {
-    display: flex;
-    justify-content: center;
-    text-align: center;
- }
- 
- 
- .footer-title {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 15px;
- }
- 
- 
- .footer-bottom {
-    margin-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    padding-top: 10px;
-    font-size: 14px;
- }
- 
- 
- /*END FOOTER IN CONTTACTUS*/
- 
- 
- /* ABOUT US PAGE*/
- 
- 
- .about{
-    text-align: center;
-    font-family: 'Dancing Script', sans-serif;
-    font-size: 50px;
-    font: bold;
-    color:#698d80;
-    margin-top: 40px;
-    margin-bottom: 3 0px;
- }
- 
- .page-content {
-   padding-bottom: 80px; /* or try margin-bottom: 80px; */
 }
- .Slider{
-    margin-top: 20px; /* Adjust this value as needed */
-    padding-bottom: 80px;
-    padding-top: 15px;
-    height: 30px;
-    width: 100%;
-    font-size: 30px;
-    text-align: center;
-    font-family: 'Quicksand', sans-serif;
-    color: #b47272;
-    box-sizing: border-box;
-    overflow: hidden;
-    position: relative;
- 
- 
+
+
+.previous-messages-header {
+   margin-top: 130px;
+   text-align: center;
+   font-family: 'Dancing Script', sans-serif;
+   font-size: 50px;
+   font-weight: bold;
+   color: #698d80;
+   margin-bottom: 30px;
+}
+
+/* Message Display Styling */
+#messagesContainer {
+   width: 90%;
+   max-width: 600px;
+   margin: 40px auto;
+   padding: 20px;
+   background: rgba(255, 255, 255, 0.4);
+   /* Soft translucent background */
+   border: 3px solid rgba(255, 255, 255, 0.5);
+   border-radius: 15px;
+   backdrop-filter: blur(5px);
+   /* Glass effect */
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.message-card {
+   background-color: #fffaf0;
+   border: 2px solid #f1e4dd;
+   padding: 15px;
+   margin-bottom: 20px;
+   border-radius: 12px;
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+   font-family: 'Quicksand', sans-serif;
+   transition: transform 0.2s ease-in-out;
+}
+
+.message-card:hover {
+   transform: scale(1.01);
+}
+
+.message-card p {
+   margin: 8px 0;
+   color: #41393d;
+   font-size: 15px;
+}
+
+.message-card p strong {
+   color: #698d80;
+}
+
+
+.warning-message {
+   color: #b94a48;
+   background-color: #f2dede;
+   border: 1px solid #eed3d7;
+   padding: 8px;
+   margin-top: 5px;
+   font-size: 14px;
+   border-radius: 4px;
+   font-family: 'Quicksand', sans-serif;
  }
  
- 
- .Slider div {
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    animation: slider 6s linear infinite;
-    opacity: 0;
- }
- 
- 
- .Slider div:nth-child(1) {
-    animation-delay: 0s;
- }
- .Slider div:nth-child(2) {
-    animation-delay: 2s;
- }
- .Slider div:nth-child(3) {
-    animation-delay: 4s;
- }
- 
- 
- 
- 
- @keyframes slider{
- 
- 
-    0% { opacity: 0; transform: translateY(10px); }
-    10% { opacity: 1; transform: translateY(0px); }
-    30% { opacity: 1; transform: translateY(0px); }
-    40% { opacity: 0; transform: translateY(-10px); }
-    100% { opacity: 0; }
- 
- 
- 
- 
- }
- 
- 
- .container p{
-    font-family: 'Quicksand', sans-serif;
-    font-size: 15px;
-    margin-bottom: 20px;
-    color: #698d80;
-    text-align: center;
- 
- 
- }
- 
- 
- .card-title {
-    font-family: 'Dancing Script', cursive;
-    font-size: 24px;
-    font-weight: bold;
-    color: #4a6652;
-    margin-bottom: 10px;
- }
- 
- 
- 
- 
- .card-body{
- 
- 
-    background-color:#fffaf0;
- }
- 
- 
- .card-text img {
-    width: 250px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin: 10px auto;
-    display: block;
- }
- 
- 
- 
- 
- 
- 
- .about-card-button {
-    background-color: #698d80 !important; /* Soft red */
-    border: none !important;
-    font-family: 'Quicksand', sans-serif !important;
-    font-size: 16px !important;
-    font-weight: 500 !important;
-    padding: 10px 20px !important;
-    border-radius: 25px !important;
-    transition: all 0.3s ease-in-out !important;
-    color: white !important;
-    text-transform: uppercase !important;
- }
- 
- 
- .about-card-button:hover {
-    background-color: #698d80 !important; /* Slightly darker red on hover */
-    transform: scale(1.05) !important;
- }
- 
- 
- /* END OF ABOUT US PAGE*/
- 
- 
- /* Our Services Page */
- 
- 
- .services-page {
-    background-image: url('../media/background2.jpg'); /* Replace with your desired image */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
- }
- 
- 
- /* City Dropdown Styling */
- .city-label {
-    font-family: 'Dancing Script', cursive;
-    color: #698d80;
-    font-size: 32px;
-    margin-top: 25px;
-    margin-bottom: 10px;
- }
- 
- 
- #city-select {
-    width: 300px;
-    padding: 10px;
-    margin: 0 auto 20px auto;
-    display: block;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 16px;
-    color: #41393d;
-    background-color: rgba(255, 255, 255, 0.9);
-    border: 2px solid #698d80;
-    border-radius: 25px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
-    text-align: center;
- }
- .no-city-message {
-    color: #b47272;
-    background-color: #fff4f4;
-    border: 1px solid #f3caca;
-    padding: 10px;
-    border-radius: 8px;
-    text-align: center;
-    margin-top: 10px;
-    font-size: 14px;
-    font-family: 'Quicksand', sans-serif;
- }
- 
- 
- 
- 
- .hero-section {
-    height: 93vh; /* Adjust height as needed */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    padding: 20px;
-    position: relative;
- }
- 
- 
- /* Add an overlay effect */
- .hero-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
- }
- 
- 
- /* Style the hero content */
- .hero-content {
-    position: relative;
-    z-index: 1;
-    max-width: 700px;
- }
- 
- 
- /* Hero Heading */
- .hero-content h1 {
-    font-family: 'Dancing Script', cursive;
-    font-size: 3rem;
-    font-weight: bold;
- }
- 
- 
- /* Hero Subheading */
- .hero-content p {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1.2rem;
-    margin: 10px 0 20px;
- }
- 
- 
- /* Hero Button */
- .hero-content .btn-primary {
-    background-color: #698d80;
-    border: none;
-    padding: 12px 25px;
-    font-size: 1.1rem;
-    font-weight: bold;
-    border-radius: 25px;
-    transition: all 0.3s ease-in-out;
- }
- 
- 
- .hero-content .btn-primary:hover {
-    background-color: #5b7a6e;
-    transform: scale(1.05);
- }
- 
- 
- .warning-message {
-    color: red;
-    font-size: 14px;
-    margin-top: 5px;
-    text-align: center;
-    font-family: 'Quicksand', sans-serif;
- }
- 
- 
- /* Steps Section Styling */
- 
- 
- /* Steps Section */
- .steps-section {
-    margin-top: 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px 0;
-    gap: 40px;
- }
- 
- 
- /* Step Blocks */
- .step {
-    display: flex;
-    align-items: center;
-    width: 85%;
-    max-width: 1200px;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    transition: transform 0.3s ease-in-out;
- }
- 
- 
- .step:hover {
-    transform: translateY(-5px);
- }
- 
- 
- /* Alternating Layout */
- .step:nth-child(even) {
-    flex-direction: row-reverse;
- }
- 
- 
- /* Step Content */
- .step-content {
-    flex: 1;
-    padding: 20px;
- }
- 
- 
- .step-content h3 {
-    font-size: 1.8rem;
-    color: #698d80;
-    font-family: 'Dancing Script', cursive;
- }
- 
- 
- .step-content p {
-    font-size: 1.1rem;
-    color: #41393d;
-    font-family: 'Quicksand', sans-serif;
- }
- 
- 
- /* Step Images */
- .step img {
-   
-    width: 250px;
-    height: 250px;
-    border-radius: 20px;
-    object-fit: cover;
-    transition: transform 0.3s ease-in-out;
- }
- 
- 
- .step img:hover {
-    transform: scale(1.05);
- }
- 
- 
- /* Responsive */
- @media (max-width: 768px) {
-    .step {
-        flex-direction: column !important;
-        text-align: center;
-    }
- 
- 
-    .step img {
-        width: 200px;
-        height: 200px;
-        margin-bottom: 15px;
-    }
- }
- 
- .service-card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
-    margin-top: 20px;
-    padding: 0 10px;
-    box-sizing: border-box;
+/*FOOTER IN CONTTACTUS*/
+
+
+.footer {
+   background-color: #4a6652;
+   color: #fff;
+   padding: 40px 0;
+   text-align: center;
+}
+
+
+.footer .row {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+}
+
+
+.footer-title {
+   font-size: 20px;
+   font-weight: bold;
+   margin-bottom: 15px;
+}
+
+
+.footer-bottom {
+   margin-top: 20px;
+   border-top: 1px solid rgba(255, 255, 255, 0.2);
+   padding-top: 10px;
+   font-size: 14px;
+}
+
+
+/*END FOOTER IN CONTTACTUS*/
+
+
+/* ABOUT US PAGE*/
+
+
+.about {
+   text-align: center;
+   font-family: 'Dancing Script', sans-serif;
+   font-size: 50px;
+   font: bold;
+   color: #698d80;
+   margin-top: 40px;
+   margin-bottom: 3 0px;
+}
+
+.page-content {
+   padding-bottom: 80px;
+   /* or try margin-bottom: 80px; */
+}
+
+.Slider {
+   margin-top: 20px;
+   /* Adjust this value as needed */
+   padding-bottom: 80px;
+   padding-top: 15px;
+   height: 30px;
+   width: 100%;
+   font-size: 30px;
+   text-align: center;
+   font-family: 'Quicksand', sans-serif;
+   color: #b47272;
+   box-sizing: border-box;
+   overflow: hidden;
+   position: relative;
+
+
+}
+
+
+.Slider div {
+   height: 30px;
+   line-height: 30px;
+   text-align: center;
+   position: absolute;
+   width: 100%;
+   animation: slider 6s linear infinite;
+   opacity: 0;
+}
+
+
+.Slider div:nth-child(1) {
+   animation-delay: 0s;
+}
+
+.Slider div:nth-child(2) {
+   animation-delay: 2s;
+}
+
+.Slider div:nth-child(3) {
+   animation-delay: 4s;
+}
+
+
+
+
+@keyframes slider {
+
+
+   0% {
+      opacity: 0;
+      transform: translateY(10px);
+   }
+
+   10% {
+      opacity: 1;
+      transform: translateY(0px);
+   }
+
+   30% {
+      opacity: 1;
+      transform: translateY(0px);
+   }
+
+   40% {
+      opacity: 0;
+      transform: translateY(-10px);
+   }
+
+   100% {
+      opacity: 0;
+   }
+
+
+
+
+}
+
+
+.container p {
+   font-family: 'Quicksand', sans-serif;
+   font-size: 15px;
+   margin-bottom: 20px;
+   color: #698d80;
+   text-align: center;
+
+
+}
+
+
+.card-title {
+   font-family: 'Dancing Script', cursive;
+   font-size: 24px;
+   font-weight: bold;
+   color: #4a6652;
+   margin-bottom: 10px;
+}
+
+
+
+
+.card-body {
+
+
+   background-color: #fffaf0;
+}
+
+
+.card-text img {
+   width: 250px;
+   height: 150px;
+   border-radius: 50%;
+   object-fit: cover;
+   margin: 10px auto;
+   display: block;
+}
+
+
+
+
+
+
+.about-card-button {
+   background-color: #698d80 !important;
+   /* Soft red */
+   border: none !important;
+   font-family: 'Quicksand', sans-serif !important;
+   font-size: 16px !important;
+   font-weight: 500 !important;
+   padding: 10px 20px !important;
+   border-radius: 25px !important;
+   transition: all 0.3s ease-in-out !important;
+   color: white !important;
+   text-transform: uppercase !important;
+}
+
+
+.about-card-button:hover {
+   background-color: #698d80 !important;
+   /* Slightly darker red on hover */
+   transform: scale(1.05) !important;
+}
+
+
+/* END OF ABOUT US PAGE*/
+
+
+/* Our Services Page */
+
+
+.services-page {
+   background-image: url('../media/background2.jpg');
+   /* Replace with your desired image */
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+}
+
+
+/* City Dropdown Styling */
+.city-label {
+   font-family: 'Dancing Script', cursive;
+   color: #698d80;
+   font-size: 32px;
+   margin-top: 25px;
+   margin-bottom: 10px;
+}
+
+
+#city-select {
+   width: 300px;
+   padding: 10px;
+   margin: 0 auto 20px auto;
+   display: block;
+   font-family: 'Quicksand', sans-serif;
+   font-size: 16px;
+   color: #41393d;
+   background-color: rgba(255, 255, 255, 0.9);
+   border: 2px solid #698d80;
+   border-radius: 25px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   transition: all 0.3s ease-in-out;
+   text-align: center;
+}
+
+.no-city-message {
+   color: #b47272;
+   background-color: #fff4f4;
+   border: 1px solid #f3caca;
+   padding: 10px;
+   border-radius: 8px;
+   text-align: center;
+   margin-top: 10px;
+   font-size: 14px;
+   font-family: 'Quicksand', sans-serif;
+}
+
+
+
+
+.hero-section {
+   height: 93vh;
+   /* Adjust height as needed */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   color: white;
+   padding: 20px;
+   position: relative;
+}
+
+
+/* Add an overlay effect */
+.hero-section::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.5);
+   /* Dark overlay for readability */
+}
+
+
+/* Style the hero content */
+.hero-content {
+   position: relative;
+   z-index: 1;
+   max-width: 700px;
+}
+
+
+/* Hero Heading */
+.hero-content h1 {
+   font-family: 'Dancing Script', cursive;
+   font-size: 3rem;
+   font-weight: bold;
+}
+
+
+/* Hero Subheading */
+.hero-content p {
+   font-family: 'Quicksand', sans-serif;
+   font-size: 1.2rem;
+   margin: 10px 0 20px;
+}
+
+
+/* Hero Button */
+.hero-content .btn-primary {
+   background-color: #698d80;
+   border: none;
+   padding: 12px 25px;
+   font-size: 1.1rem;
+   font-weight: bold;
+   border-radius: 25px;
+   transition: all 0.3s ease-in-out;
+}
+
+
+.hero-content .btn-primary:hover {
+   background-color: #5b7a6e;
+   transform: scale(1.05);
+}
+
+
+.warning-message {
+   color: red;
+   font-size: 14px;
+   margin-top: 5px;
+   text-align: center;
+   font-family: 'Quicksand', sans-serif;
+}
+
+
+/* Steps Section Styling */
+
+
+/* Steps Section */
+.steps-section {
+   margin-top: 150px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 50px 0;
+   gap: 40px;
+}
+
+
+/* Step Blocks */
+.step {
+   display: flex;
+   align-items: center;
+   width: 85%;
+   max-width: 1200px;
+   background: rgba(255, 255, 255, 0.9);
+   border-radius: 15px;
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+   padding: 30px;
+   transition: transform 0.3s ease-in-out;
+}
+
+
+.step:hover {
+   transform: translateY(-5px);
+}
+
+
+/* Alternating Layout */
+.step:nth-child(even) {
+   flex-direction: row-reverse;
+}
+
+
+/* Step Content */
+.step-content {
+   flex: 1;
+   padding: 20px;
+}
+
+
+.step-content h3 {
+   font-size: 1.8rem;
+   color: #698d80;
+   font-family: 'Dancing Script', cursive;
+}
+
+
+.step-content p {
+   font-size: 1.1rem;
+   color: #41393d;
+   font-family: 'Quicksand', sans-serif;
+}
+
+
+/* Step Images */
+.step img {
+
+   width: 250px;
+   height: 250px;
+   border-radius: 20px;
+   object-fit: cover;
+   transition: transform 0.3s ease-in-out;
+}
+
+
+.step img:hover {
+   transform: scale(1.05);
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+   .step {
+      flex-direction: column !important;
+      text-align: center;
+   }
+
+
+   .step img {
+      width: 200px;
+      height: 200px;
+      margin-bottom: 15px;
+   }
+}
+
+.service-card-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 16px;
+   margin-top: 20px;
+   padding: 0 10px;
+   box-sizing: border-box;
 }
 
 .service-card {
-    background: #fff8f2; /* soft warm background */
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    text-align: center;
-    width: 260px; /* smaller width to fit 3 in a row */
-    flex-shrink: 0;
+   background: #fff8f2;
+   /* soft warm background */
+   border-radius: 15px;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+   overflow: hidden;
+   transition: transform 0.3s ease;
+   text-align: center;
+   width: 260px;
+   /* smaller width to fit 3 in a row */
+   flex-shrink: 0;
 }
 
 .service-card:hover {
-    transform: scale(1.03);
+   transform: scale(1.03);
 }
 
 .service-card img.service-image {
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
+   width: 100%;
+   height: 160px;
+   object-fit: cover;
 }
 
 .service-card-body {
-    padding: 15px;
+   padding: 15px;
 }
 
 .service-name {
-    font-family: 'Dancing Script', cursive;
-    font-size: 20px;
-    color: #b47272;
-    margin: 10px 0;
+   font-family: 'Dancing Script', cursive;
+   font-size: 20px;
+   color: #b47272;
+   margin: 10px 0;
 }
 
 .service-description {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 15px;
-    color: #41393d;
+   font-family: 'Quicksand', sans-serif;
+   font-size: 15px;
+   color: #41393d;
 }
 
 /* No-image cards (for other services) */
 .service-card.no-image {
-    background: #fdfcfa;
-    padding: 15px;
-    width: 240px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+   background: #fdfcfa;
+   padding: 15px;
+   width: 240px;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
- 
- @media (max-width: 768px) {
-    .service-card {
-        width: 90% !important;
-    }
+
+@media (max-width: 768px) {
+   .service-card {
+      width: 90% !important;
+   }
 }
 
- /*end of Our Services Page */ 
+/*end of Our Services Page */

@@ -10,26 +10,20 @@ document.addEventListener("DOMContentLoaded", function () {
       .then(response => response.json())
       .then(data => {
         const container = document.getElementById("messagesContainer");
-        container.innerHTML = ""; // clear previous messages
-
+        container.innerHTML = ""; // Clear previous messages
+  
         if (data.length === 0) {
           container.innerHTML = "<p>No messages yet.</p>";
           return;
         }
-
-        // Loop through and render each message
+  
+        // Loop through and render only email and message
         data.forEach(msg => {
           const card = document.createElement("div");
           card.className = "message-card";
           card.innerHTML = `
             <p><strong>Name:</strong> ${msg.name}</p>
-            <p><strong>Email:</strong> ${msg.email}</p>
             <p><strong>Message:</strong> ${msg.message}</p>
-            <p><strong>Gender:</strong> ${msg.gender}</p>
-            <p><strong>Mobile:</strong> ${msg.mobile}</p>
-            <p><strong>DOB:</strong> ${msg.dob}</p>
-            <p><strong>Language:</strong> ${msg.language}</p>
-            <p><strong>Submitted At:</strong> ${msg.created_at}</p>
             <hr>
           `;
           container.appendChild(card);
@@ -39,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
         console.error("Error loading messages:", error);
       });
   }
+  
 
   // Load messages when the page is first loaded
   loadMessages();

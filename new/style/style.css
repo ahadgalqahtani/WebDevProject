@@ -1,6 +1,6 @@
 /* Set the background image */
 body, html {
-    background-image: url('/new/media/background.jpg'); /* Replace with your image */
+    background-image: url('../media/background.jpg'); /* Replace with your image */
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Keeps the background fixed when scrolling */
@@ -11,10 +11,11 @@ body, html {
     overflow-x: hidden; /* Prevent horizontal scrolling */
     scroll-behavior: smooth; /* Smooth transition between sections */
     scroll-padding-top: 100px;
-}
-
-/* Style the navigation bar */
-.navbar {
+ }
+ 
+ 
+ /* Style the navigation bar */
+ .navbar {
     padding: 20px 35px !important;
     position: fixed; /* Fix it at the top */
     top: 0;
@@ -24,56 +25,65 @@ body, html {
     background-color: rgba(242, 200, 237, 0.8); /* Keep background semi-transparent */
     padding: 20px 35px !important;
     transition: background 0.3s ease-in-out; /* Smooth effect */
-}
-
-/* Massarah Logo Styling */
-.navbar-brand {
+ }
+ 
+ 
+ /* Massarah Logo Styling */
+ .navbar-brand {
     font-size: 40px !important; /* Ensure larger size */
     font-weight: bold !important;
     font-family: 'Dancing Script', cursive !important; /* Apply font */
     color: #37222d !important; /* Pink shade */
     padding-left: 20px;
     transition: 0.3s ease-in-out;
-
-}
-
-.navbar-brand:hover{
+ 
+ 
+ }
+ 
+ 
+ .navbar-brand:hover{
     opacity: 0.7; /* Slight fade effect */
-}
-/* Push navbar items to the right */
-.navbar-nav {
+ }
+ /* Push navbar items to the right */
+ .navbar-nav {
     margin-left: auto;
     padding-right: 90px;
-}
-
-/* Make nav links bigger & stylish */
-.navbar-nav .nav-link {
+ }
+ 
+ 
+ /* Make nav links bigger & stylish */
+ .navbar-nav .nav-link {
     font-size: 15px;
     padding: 10px 15px;
     font-weight: bold;
     color: #698d80;
     transition: color 0.3s ease-in-out;
     font-family: 'Quicksand', sans-serif; /* Default font */
-}
-
-.navbar-nav .nav-link:hover {
+ }
+ 
+ 
+ .navbar-nav .nav-link:hover {
     color: #698d80; /* Pink hover effect */
-}
-
-/* Responsive Navbar Tweaks */
-@media (max-width: 992px) {
+ }
+ 
+ 
+ /* Responsive Navbar Tweaks */
+ @media (max-width: 992px) {
     .navbar-nav {
         text-align: center;
     }
-}
-
-
-h5, h1 {
+ }
+ 
+ 
+ 
+ 
+ h5, h1 {
     font-family: 'Dancing Script', cursive; /* Cute, fancy font for headings */
-}
-
-/* Carousel In Home Page */
-#infoCarousel {
+ }
+ 
+ 
+ /* Carousel In Home Page */
+ #infoCarousel {
     margin: 50px auto; /* Adjust margin to center it */
     width: 80%; /* Adjust width */
     height: 90vh;
@@ -83,27 +93,31 @@ h5, h1 {
     padding: 20px; /* Space inside the border */
     align-content: center;
     margin-top: 120px; /* Pushes carousel below navbar */
-}
-
-/* Center carousel text */
-.carousel-item {
+ }
+ 
+ 
+ /* Center carousel text */
+ .carousel-item {
     color: white; /* Text color */
     padding: 50px 20px;
     text-align: center;
     font-family: 'Quicksand', sans-serif; /* Default font */
-}
-
-/* Ensure images in the carousel fill the space */
-.carousel-item img {
+ }
+ 
+ 
+ /* Ensure images in the carousel fill the space */
+ .carousel-item img {
     width: 100%;
     height: auto;
     border-radius: 10px; /* Rounded corners */
-}
-
-/* Contact Us Page */
-
-/* Centering the Form */
-.contactHeader{
+ }
+ 
+ 
+ /* Contact Us Page */
+ 
+ 
+ /* Centering the Form */
+ .contactHeader{
     margin-top: 130px;
     text-align: center;
     font-family: 'Dancing Script', sans-serif;
@@ -111,15 +125,17 @@ h5, h1 {
     font: bold;
     color:#698d80;
     margin-bottom: 30px;
-}
-
-.contact {
+ }
+ 
+ 
+ .contact {
     font-family: 'Quicksand', sans-serif;
     text-align: center;
     color: #b47272;
-}
-
-form {
+ }
+ 
+ 
+ form {
     margin: 50px auto;
     width: 80%;
     border: 5px solid rgba(255, 255, 255, 0.5);
@@ -130,36 +146,41 @@ form {
     max-width: 400px;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
-}
-
-/* Form Label Styling */
-label {
+ }
+ 
+ 
+ /* Form Label Styling */
+ label {
     font-weight: bold;
     display: block;
     margin-top: 10px;
-}
-
-/* Input and Select Styling */
-input, select, textarea {
+ }
+ 
+ 
+ /* Input and Select Styling */
+ input, select, textarea {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
-}
-
-/* Radio Buttons Styling */
-.gender-options {
+ }
+ 
+ 
+ /* Radio Buttons Styling */
+ .gender-options {
     display: inline-flex;
     align-items: center;
-    gap: 15px; 
-}
-
-.gender-options input {
+    gap: 15px;
+ }
+ 
+ 
+ .gender-options input {
     margin: 0 5px 0 0; /* Adds spacing between the radio button and label */
-}
-
-.form-errors {
+ }
+ 
+ 
+ .form-errors {
     color: #d9534f;
     background-color: #f2dede;
     border: 1px solid #ebccd1;
@@ -171,10 +192,11 @@ input, select, textarea {
     text-align: left;
     display: none; /* Hidden by default */
     font-family: 'Quicksand', sans-serif;
-}
-
-/* Button Styling */
-button {
+ }
+ 
+ 
+ /* Button Styling */
+ button {
     margin-top: 15px;
     width: 100%;
     padding: 10px;
@@ -184,45 +206,54 @@ button {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-}
-
-button:hover {
+ }
+ 
+ 
+ button:hover {
     background: #698d80;
-}
-
-/*FOOTER IN CONTTACTUS*/
-
-.footer {
+ }
+ 
+ 
+ /*FOOTER IN CONTTACTUS*/
+ 
+ 
+ .footer {
     background-color: #4a6652;
     color: #fff;
     padding: 40px 0;
     text-align: center;
-}
-
-.footer .row {
+ }
+ 
+ 
+ .footer .row {
     display: flex;
     justify-content: center;
     text-align: center;
-}
-
-.footer-title {
+ }
+ 
+ 
+ .footer-title {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 15px;
-}
-
-.footer-bottom {
+ }
+ 
+ 
+ .footer-bottom {
     margin-top: 20px;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     padding-top: 10px;
     font-size: 14px;
-}
-
-/*END FOOTER IN CONTTACTUS*/
-
-/* ABOUT US PAGE*/
-
-.about{
+ }
+ 
+ 
+ /*END FOOTER IN CONTTACTUS*/
+ 
+ 
+ /* ABOUT US PAGE*/
+ 
+ 
+ .about{
     text-align: center;
     font-family: 'Dancing Script', sans-serif;
     font-size: 50px;
@@ -230,9 +261,10 @@ button:hover {
     color:#698d80;
     margin-top: 40px;
     margin-bottom: 30px;
-}
-
-.Slider{
+ }
+ 
+ 
+ .Slider{
     margin-top: 20px; /* Adjust this value as needed */
     padding-bottom: 80px;
     padding-top: 15px;
@@ -245,10 +277,12 @@ button:hover {
     box-sizing: border-box;
     overflow: hidden;
     position: relative;
-
-}
-
-.Slider div {
+ 
+ 
+ }
+ 
+ 
+ .Slider div {
     height: 30px;
     line-height: 30px;
     text-align: center;
@@ -256,65 +290,81 @@ button:hover {
     width: 100%;
     animation: slider 6s linear infinite;
     opacity: 0;
-}
-
-.Slider div:nth-child(1) {
+ }
+ 
+ 
+ .Slider div:nth-child(1) {
     animation-delay: 0s;
-}
-.Slider div:nth-child(2) {
+ }
+ .Slider div:nth-child(2) {
     animation-delay: 2s;
-}
-.Slider div:nth-child(3) {
+ }
+ .Slider div:nth-child(3) {
     animation-delay: 4s;
-}
-
-
-@keyframes slider{
-
+ }
+ 
+ 
+ 
+ 
+ @keyframes slider{
+ 
+ 
     0% { opacity: 0; transform: translateY(10px); }
     10% { opacity: 1; transform: translateY(0px); }
     30% { opacity: 1; transform: translateY(0px); }
     40% { opacity: 0; transform: translateY(-10px); }
     100% { opacity: 0; }
-
-
-}
-
-.container p{
+ 
+ 
+ 
+ 
+ }
+ 
+ 
+ .container p{
     font-family: 'Quicksand', sans-serif;
-    font-size: 15px; 
-    margin-bottom: 20px; 
+    font-size: 15px;
+    margin-bottom: 20px;
     color: #698d80;
     text-align: center;
-
-}
-
-.card-title {
-    font-family: 'Dancing Script', cursive; 
-    font-size: 24px; 
-    font-weight: bold; 
-    color: #4a6652; 
-    margin-bottom: 10px; 
-}
-
-
-.card-body{
-
+ 
+ 
+ }
+ 
+ 
+ .card-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+    font-weight: bold;
+    color: #4a6652;
+    margin-bottom: 10px;
+ }
+ 
+ 
+ 
+ 
+ .card-body{
+ 
+ 
     background-color:#fffaf0;
-}
-
-.card-text img {
-    width: 250px; 
-    height: 150px; 
-    border-radius: 50%; 
-    object-fit: cover; 
-    margin: 10px auto; 
-    display: block; 
-}
-
-
-
-.about-card-button {
+ }
+ 
+ 
+ .card-text img {
+    width: 250px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 10px auto;
+    display: block;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ .about-card-button {
     background-color: #698d80 !important; /* Soft red */
     border: none !important;
     font-family: 'Quicksand', sans-serif !important;
@@ -325,37 +375,43 @@ button:hover {
     transition: all 0.3s ease-in-out !important;
     color: white !important;
     text-transform: uppercase !important;
-}
-
-.about-card-button:hover {
+ }
+ 
+ 
+ .about-card-button:hover {
     background-color: #698d80 !important; /* Slightly darker red on hover */
     transform: scale(1.05) !important;
-}
-
-/* END OF ABOUT US PAGE*/
-
-/* Our Services Page */
-
-.services-page {
-    background-image: url('/new/media/background2.jpg'); /* Replace with your desired image */
+ }
+ 
+ 
+ /* END OF ABOUT US PAGE*/
+ 
+ 
+ /* Our Services Page */
+ 
+ 
+ .services-page {
+    background-image: url('../media/background2.jpg'); /* Replace with your desired image */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-}
-
-/* City Dropdown Styling */
-.city-label {
+ }
+ 
+ 
+ /* City Dropdown Styling */
+ .city-label {
     font-family: 'Dancing Script', cursive;
     color: #698d80;
     font-size: 32px;
     margin-top: 25px;
     margin-bottom: 10px;
-}
-
-#city-select {
+ }
+ 
+ 
+ #city-select {
     width: 300px;
     padding: 10px;
-    margin: 0 auto 20px auto; 
+    margin: 0 auto 20px auto;
     display: block;
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
@@ -366,8 +422,8 @@ button:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
     text-align: center;
-}
-.no-city-message {
+ }
+ .no-city-message {
     color: #b47272;
     background-color: #fff4f4;
     border: 1px solid #f3caca;
@@ -377,10 +433,12 @@ button:hover {
     margin-top: 10px;
     font-size: 14px;
     font-family: 'Quicksand', sans-serif;
-}
-
-
-.hero-section {
+ }
+ 
+ 
+ 
+ 
+ .hero-section {
     height: 93vh; /* Adjust height as needed */
     display: flex;
     align-items: center;
@@ -389,10 +447,11 @@ button:hover {
     color: white;
     padding: 20px;
     position: relative;
-}
-
-/* Add an overlay effect */
-.hero-section::before {
+ }
+ 
+ 
+ /* Add an overlay effect */
+ .hero-section::before {
     content: "";
     position: absolute;
     top: 0;
@@ -400,31 +459,35 @@ button:hover {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
-}
-
-/* Style the hero content */
-.hero-content {
+ }
+ 
+ 
+ /* Style the hero content */
+ .hero-content {
     position: relative;
     z-index: 1;
     max-width: 700px;
-}
-
-/* Hero Heading */
-.hero-content h1 {
+ }
+ 
+ 
+ /* Hero Heading */
+ .hero-content h1 {
     font-family: 'Dancing Script', cursive;
     font-size: 3rem;
     font-weight: bold;
-}
-
-/* Hero Subheading */
-.hero-content p {
+ }
+ 
+ 
+ /* Hero Subheading */
+ .hero-content p {
     font-family: 'Quicksand', sans-serif;
     font-size: 1.2rem;
     margin: 10px 0 20px;
-}
-
-/* Hero Button */
-.hero-content .btn-primary {
+ }
+ 
+ 
+ /* Hero Button */
+ .hero-content .btn-primary {
     background-color: #698d80;
     border: none;
     padding: 12px 25px;
@@ -432,35 +495,40 @@ button:hover {
     font-weight: bold;
     border-radius: 25px;
     transition: all 0.3s ease-in-out;
-}
-
-.hero-content .btn-primary:hover {
+ }
+ 
+ 
+ .hero-content .btn-primary:hover {
     background-color: #5b7a6e;
     transform: scale(1.05);
-}
-
-.warning-message {
+ }
+ 
+ 
+ .warning-message {
     color: red;
     font-size: 14px;
     margin-top: 5px;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
-}
-
-/* Steps Section Styling */
-
-/* Steps Section */
-.steps-section {
+ }
+ 
+ 
+ /* Steps Section Styling */
+ 
+ 
+ /* Steps Section */
+ .steps-section {
     margin-top: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 50px 0;
     gap: 40px;
-}
-
-/* Step Blocks */
-.step {
+ }
+ 
+ 
+ /* Step Blocks */
+ .step {
     display: flex;
     align-items: center;
     width: 85%;
@@ -470,61 +538,133 @@ button:hover {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     padding: 30px;
     transition: transform 0.3s ease-in-out;
-}
-
-.step:hover {
+ }
+ 
+ 
+ .step:hover {
     transform: translateY(-5px);
-}
-
-/* Alternating Layout */
-.step:nth-child(even) {
+ }
+ 
+ 
+ /* Alternating Layout */
+ .step:nth-child(even) {
     flex-direction: row-reverse;
-}
-
-/* Step Content */
-.step-content {
+ }
+ 
+ 
+ /* Step Content */
+ .step-content {
     flex: 1;
     padding: 20px;
-}
-
-.step-content h3 {
+ }
+ 
+ 
+ .step-content h3 {
     font-size: 1.8rem;
     color: #698d80;
     font-family: 'Dancing Script', cursive;
-}
-
-.step-content p {
+ }
+ 
+ 
+ .step-content p {
     font-size: 1.1rem;
     color: #41393d;
     font-family: 'Quicksand', sans-serif;
-}
-
-/* Step Images */
-.step img {
-    
+ }
+ 
+ 
+ /* Step Images */
+ .step img {
+   
     width: 250px;
     height: 250px;
     border-radius: 20px;
     object-fit: cover;
     transition: transform 0.3s ease-in-out;
-}
-
-.step img:hover {
+ }
+ 
+ 
+ .step img:hover {
     transform: scale(1.05);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
+ }
+ 
+ 
+ /* Responsive */
+ @media (max-width: 768px) {
     .step {
         flex-direction: column !important;
         text-align: center;
     }
-
+ 
+ 
     .step img {
         width: 200px;
         height: 200px;
         margin-bottom: 15px;
     }
+ }
+ 
+ .service-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 
-/*end of Our Services Page */
+.service-card {
+    background: #fff8f2; /* soft warm background */
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: center;
+    width: 260px; /* smaller width to fit 3 in a row */
+    flex-shrink: 0;
+}
+
+.service-card:hover {
+    transform: scale(1.03);
+}
+
+.service-card img.service-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.service-card-body {
+    padding: 15px;
+}
+
+.service-name {
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    color: #b47272;
+    margin: 10px 0;
+}
+
+.service-description {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    color: #41393d;
+}
+
+/* No-image cards (for other services) */
+.service-card.no-image {
+    background: #fdfcfa;
+    padding: 15px;
+    width: 240px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+ 
+ @media (max-width: 768px) {
+    .service-card {
+        width: 90% !important;
+    }
+}
+
+ /*end of Our Services Page */ 

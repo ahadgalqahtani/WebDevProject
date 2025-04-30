@@ -43,6 +43,19 @@ app.post('/contact', (req, res) => {
   });
 });
 
+app.get('/contact/messages', (req, res) => {
+  const sql = 'SELECT * FROM contact_messages ORDER BY id DESC';
+  db.query(sql, (err, results) => {
+    if (err) {
+      console.error('Error fetching data:', err);
+      res.status(500).send('Server error');
+    } else {
+      res.json(results);
+    }
+  });
+});
+
+
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
 });

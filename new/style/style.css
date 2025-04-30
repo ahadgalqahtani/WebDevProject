@@ -260,10 +260,12 @@ body, html {
     font: bold;
     color:#698d80;
     margin-top: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 3 0px;
  }
  
- 
+ .page-content {
+   padding-bottom: 80px; /* or try margin-bottom: 80px; */
+}
  .Slider{
     margin-top: 20px; /* Adjust this value as needed */
     padding-bottom: 80px;

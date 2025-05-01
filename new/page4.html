@@ -65,7 +65,7 @@
            <option value="Jeddah">Jeddah</option>
            <option value="Dammam">Dammam</option>
          </select>
-         <div id="city-warning" class="warning-message"></div>
+         <div id="city-warning" class="city-warning-message"></div>
        </div>
      </div>
     
@@ -131,8 +131,12 @@
 </section>
 <script src="js/page4.js"></script>
 
-
-
+<h3 class="Suggestions">Got Suggestions?</h3>
+<form id="suggestionForm" method="POST" action="http://localhost:3000/suggestions">
+  <textarea id="message" name="message" rows="4" required placeholder="Write your suggestions here."></textarea>
+  <button type="submit">Submit</button>
+</form>
+<p class="feedbackMessage" id="feedbackMessage"></p>
 <footer class="footer">
     <div class="container">
         <div class="row">
@@ -146,6 +150,36 @@
         </div>
     </div>
 </footer>
+<script>
+    document.getElementById("suggestionForm").addEventListener("submit", function (e) {
+      e.preventDefault(); // Prevent form from navigating away
+    
+      const message = document.getElementById("message").value;
+    
+      fetch("http://localhost:3000/suggestions", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ message }),
+      })
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("feedbackMessage").textContent = "Thank you for your suggestion!";
+        document.getElementById("suggestionForm").reset();
+    
+        // Optional: hide the message after 4 seconds
+        setTimeout(() => {
+          document.getElementById("feedbackMessage").textContent = "";
+        }, 4000);
+      })
+      .catch(error => {
+        document.getElementById("feedbackMessage").textContent = "Something went wrong. Please try again.";
+        console.error("Error:", error);
+      });
+    });
+    </script>
+
 </body>
 
 

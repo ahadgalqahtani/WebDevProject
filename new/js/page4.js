@@ -318,4 +318,6 @@ document.addEventListener("DOMContentLoaded", function () {
       updateServiceInformation(citySelect.value); // <--- add this line
     }
   });
+
+  
 }); 

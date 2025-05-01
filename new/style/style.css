@@ -249,6 +249,15 @@ textarea {
    font-family: 'Quicksand', sans-serif;
 }
 
+.previousHeader {
+   margin-top: 130px;
+   text-align: center;
+   font-family: 'Dancing Script', sans-serif;
+   font-size: 50px;
+   font-weight: bold;
+   color: #698d80;
+   margin-bottom: 30px;
+}
 
 /* Button Styling */
 button {
@@ -326,6 +335,18 @@ button:hover {
 .message-card p strong {
    color: #698d80;
 }
+
+.city-warning-message {
+   color: #b94a48;
+   background-color: transparent;
+   border: none;
+   padding: 0;
+   margin-top: 5px;
+   font-size: 14px;
+   font-family: 'Quicksand', sans-serif;
+   text-align: center;
+}
+
 
 
 .warning-message {
@@ -818,6 +839,24 @@ button:hover {
    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
+.Suggestions{
+   margin-top: 130px;
+   text-align: center;
+   font-family: 'Dancing Script', sans-serif;
+   font-size: 50px;
+   font: bold;
+   color: #698d80;
+   margin-bottom: 30px;
+}
+
+.feedbackMessage{
+   font-family: 'Dancing Script', sans-serif;
+   font-size: 50px;
+   text-align: center;
+   font: bold;
+   margin-bottom: 130px;
+   color: #698d80;
+}
 
 @media (max-width: 768px) {
    .service-card {

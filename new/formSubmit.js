@@ -23,14 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
           card.className = "message-card";
           card.innerHTML = `
             <p><strong>Name:</strong> ${msg.name}</p>
-            <p><strong>Email:</strong> ${msg.email}</p>
             <p><strong>Message:</strong> ${msg.message}</p>
-            <p><strong>Gender:</strong> ${msg.gender}</p>
-            <p><strong>Mobile:</strong> ${msg.mobile}</p>
-            <p><strong>DOB:</strong> ${msg.dob}</p>
-            <p><strong>Language:</strong> ${msg.language}</p>
-            <p><strong>Submitted At:</strong> ${msg.created_at}</p>
-            <hr>
           `;
           container.appendChild(card);
         });
